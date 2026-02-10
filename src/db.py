@@ -80,3 +80,4 @@ if __name__ == "__main__":
     create_table_dimensionbranch()
     create_table_dimensioncustomer()
     create_table_facttransaction()
+
