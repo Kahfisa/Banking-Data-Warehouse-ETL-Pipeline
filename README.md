@@ -3,21 +3,15 @@
 ## Introduction
 This project is an implementation of a **Data Warehouse and ETL Pipeline** designed to support data integration and analytics needs in the **banking industry**. The system consolidates data from multiple heterogeneous sources, including **Excel files, CSV files, and SQL Server databases**, into a centralized **Data Warehouse using BigQuery**. The project includes the design of a **Star Schema based Data Warehouse**, the development of **ETL processes using Python**, and the creation of **Stored Procedures** to support analytical and reporting requirements.
 
----
-
 ## Objectives
 - Built a **Data Warehouse** using **BigQuery**
 - Developed **ETL (Extract, Transform, Load)** processes to integrate data from multiple sources with **deduplication mechanisms** to ensure data quality and consistency
 - Created **Stored Procedures** to support fast data analysis and reporting
 
----
-
 ## Tools & Technologies
 - Python  
 - BigQuery  
 - SQL Server  
-
----
 
 ## Data Architecture
 
@@ -40,8 +34,6 @@ The Data Warehouse is designed using a **Star Schema**, consisting of:
   - DimBranch  
 - **Fact Table**
   - FactTransaction  
-
----
 
 ## ETL Process
 
@@ -73,7 +65,6 @@ The Data Warehouse is designed using a **Star Schema**, consisting of:
 ### 3. Load
 - Loaded data into **dimension and fact tables** in the Data Warehouse  
 
----
 
 ## Use Case
 
