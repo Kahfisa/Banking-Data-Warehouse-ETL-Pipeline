@@ -33,7 +33,52 @@ The Data Warehouse is designed using a **Star Schema**, consisting of:
   - DimCustomer  
   - DimBranch  
 - **Fact Table**
-  - FactTransaction  
+  - FactTransaction
+
+## Project Structure
+Banking Data Warehouse ETL Pipeline/
+│
+├── .venv/
+├── config/
+├── data/
+├── .env
+├── requirements.txt
+│
+└── src/
+    ├── main/
+    │   ├── __init__.py
+    │   └── main.py
+    │
+    └── project/
+        ├── __init__.py
+        │
+        ├── clients/
+        │   ├── __init__.py
+        │   ├── bigquery.py
+        │   └── sqlserver.py
+        │
+        ├── extract/
+        │   ├── __init__.py
+        │   └── extract.py
+        │
+        ├── transform/
+        │   ├── __init__.py
+        │   └── transform.py
+        │
+        ├── load/
+        │   ├── __init__.py
+        │   └── load.py
+        │
+        └── sql/
+            ├── data_definition_language/
+            │   ├── dimension_account.sql
+            │   ├── dimension_branch.sql
+            │   ├── dimension_customer.sql
+            │   └── fact_transaction.sql
+            │
+            └── stored_procedure/
+                ├── dailytransaction.sql
+
 
 ## ETL Process
 
@@ -64,7 +109,6 @@ The Data Warehouse is designed using a **Star Schema**, consisting of:
 
 ### 3. Load
 - Loaded data into **dimension and fact tables** in the Data Warehouse  
-
 
 ## Use Case
 
